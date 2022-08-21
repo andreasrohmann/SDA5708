@@ -24,7 +24,7 @@ class SDA5708 : public Print {
 	public:
 	
 	// constructors
-	SDA5708(uint8_t pin_reset, uint8_t pin_data, uint8_t pin_clock, uint8_t pin_load);
+    SDA5708(uint8_t pin_reset, uint8_t pin_data, uint8_t pin_clock, uint8_t pin_load);
     SDA5708(uint8_t no_of_displays, uint8_t pin_reset, uint8_t pin_data, uint8_t pin_clock, uint8_t pin_load);
 
 	// methods
@@ -33,7 +33,7 @@ class SDA5708 : public Print {
 	void setBrightness(uint8_t bright);
 	void setCursor(uint8_t pos);
 
-	size_t write(uint8_t chr, uint8_t pos);
+    size_t write(uint8_t chr, uint8_t pos);
     size_t write(uint8_t chr);
 
 	size_t print(const __FlashStringHelper *);
@@ -398,16 +398,16 @@ size_t SDA5708::println(void)
  * User defined charcters must be in the range from 0xF0 to 0xFF
  */
 void SDA5708::createChar(uint8_t no, uint8_t r0, uint8_t r1, uint8_t r2, uint8_t r3, uint8_t r4, uint8_t r5, uint8_t r6) {
-  if (no>=0xF0 & no<=0xFF) {
-    no -= 0xF0;
-    udc[7*no+0] = r0;
-    udc[7*no+1] = r1;
-    udc[7*no+2] = r2;
-    udc[7*no+3] = r3;
-    udc[7*no+4] = r4;
-    udc[7*no+5] = r5;
-    udc[7*no+6] = r6;
-  }
+    if (no>=0xF0 & no<=0xFF) {
+        no -= 0xF0;
+        udc[7*no+0] = r0;
+        udc[7*no+1] = r1;
+        udc[7*no+2] = r2;
+        udc[7*no+3] = r3;
+        udc[7*no+4] = r4;
+        udc[7*no+5] = r5;
+        udc[7*no+6] = r6;
+    }
 }
 #endif // #ifndef SDA5708_NO_UDC
 
