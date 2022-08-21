@@ -1,0 +1,7 @@
+
+SDA5708 dot matrix Library by Andreas Rohmann, licensed into public domain.
+
+
+HISTORY
+
+Aug 21, 2022 - initial release

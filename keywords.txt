@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SDA5708	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+	
+reset	KEYWORD2
+clear	KEYWORD2
+write	KEYWORD2
+print	KEYWORD2
+setBrightness	KEYWORD2
+createChar	KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+######################################
+
+SDA5708_FONT_START	LITERAL1
+SDA5708_FONT_END	LITERAL1
+SDA5708_FONT_LENGTH	LITERAL1
+SDA5708_FONT_BYTES	LITERAL1
+
+SDA5708_BRIGHTNESS_MAX	LITERAL1
+SDA5708_BRIGHTNESS_MIN	LITERAL1
+SDA5708_BRIGHTNESS_OFF	LITERAL1
+
+SDA5708_EXCLUDE_SPECIAL	LITERAL1
+SDA5708_INCLUDE_ARROWS	LITERAL1
+SDA5708_INCLUDE_HBLOCKS	LITERAL1
+SDA5708_INCLUDE_VBLOCKS	LITERAL1
+SDA5708_INCLUDE_GRAPHICS	LITERAL1
+
+SDA5708_NO_UDC	LITERAL1
